@@ -58,8 +58,7 @@ lerna add gulp --scope=lerna-pkg-util --dev
 - 命令：`lerna publish [bump]`
 - 文档：https://github.com/lerna/lerna/tree/master/commands/publish#readme
 
-推荐采用
-
+推荐采用 `lerna publish from-package --yes` 方式来发布，因为如果直接采用 `lerna publish` 与 `lerna publish from-git` 则需要 git commit 没提交，才能 `publish` 成功。而采用 `lerna publish from-package --yes` 则只需要 `npm` 包的版本号没有发不过，则可以继续发布。这样很方便集成在 `CI` 里。
 
 
 ## 常见问题
