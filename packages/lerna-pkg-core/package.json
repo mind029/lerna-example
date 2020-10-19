@@ -1,0 +1,29 @@
+{
+  "name": "lerna-pkg-core",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "mind <mind.wang@lixinchuxing.com>",
+  "homepage": "https://github.com/mind029/lerna-example#readme",
+  "license": "ISC",
+  "main": "lib/lerna-pkg-core.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mind029/lerna-example.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/mind029/lerna-example/issues"
+  },
+  "dependencies": {
+    "lerna-pkg-util": "^0.0.8"
+  }
+}
