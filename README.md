@@ -53,7 +53,17 @@ lerna add gulp --scope=lerna-pkg-util --dev
 - 命令：`lerna bootstrap`
 - 文档：https://github.com/lerna/lerna/tree/master/commands/bootstrap#readme
 
-## 使用 npm 和 yarn 的区别
+## 包发布
+
+- 命令：`lerna publish [bump]`
+- 文档：https://github.com/lerna/lerna/tree/master/commands/publish#readme
+
+推荐采用
+
+
+
+## 常见问题
+1. 使用 npm 和 yarn 的区别
 
 如果 `lerna.json` 中的 `"npmClient": "npm"`, 会在没个包下面安装对应 `node_modules` ，如果使用 `yarn` 则把所有的依赖安装到根目录下的 `node_modules`.
 
