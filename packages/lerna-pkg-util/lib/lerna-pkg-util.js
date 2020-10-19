@@ -8,5 +8,7 @@ function lernaPkgUtil() {
     console.log('lernaPkgUtil')
     // TODO
 
-    return dayjs().format('YYYY-MM-DD')
+    const formatDate = dayjs().format('YYYY-MM-DD')
+    
+    return formatDate
 }
