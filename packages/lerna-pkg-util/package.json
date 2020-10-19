@@ -29,5 +29,6 @@
   "homepage": "https://github.com/mind029/lerna-example#readme",
   "dependencies": {
     "dayjs": "^1.9.3"
-  }
+  },
+  "gitHead": "4a6d55b551b3c46f771925c44e4056002e384bc9"
 }
