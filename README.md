@@ -31,7 +31,7 @@ lerna create lerna-pkg-util
 
 ## 添加依赖
 
-- 命令：`lerna add <pkg> [globs..]`
+- 命令：`lerna add <pkg> [globs..]`
 - 文档：https://github.com/lerna/lerna/tree/master/commands/add#readme
 
 **举例**
@@ -62,7 +62,10 @@ lerna add gulp --scope=lerna-pkg-util --dev
 
 
 ## 常见问题
+
 1. 如何把 `node_modules` 安装到根目录
+
+在项目 `lerna.json` 增加如下配置
 ```
   "command": {
     "bootstrap": {
@@ -71,9 +74,19 @@ lerna add gulp --scope=lerna-pkg-util --dev
   }
 ```
 
-在项目 `lerna.json` 增加如下配置
+2. 如何解决 `CI` 环境下发布权限问题？
+
+在 `lerna` 项目根目录下，创建 `.npmrc`，里面代码如下：
+
+```
+//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+```
+
+在 `npmjs` 后台创建 `Access Tokens` ，然后在 `CI` 设置 `NPM_TOKEN` 的环境变量为 `Access Tokens` 的值即可。
+
 
 ## 参考资料
 
 官网：https://lerna.js.org/
 Github：https://github.com/lerna/lerna
+
