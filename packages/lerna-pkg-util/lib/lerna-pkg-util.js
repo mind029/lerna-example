@@ -5,7 +5,7 @@ const dayjs = require('dayjs');
 module.exports = lernaPkgUtil;
 
 function lernaPkgUtil() {
-    console.log('1lernaPkgUtil2');
+    console.log('1lernaPkgUtil211');
     // TODO
 
     const formatDate = dayjs().format('YYYY-MM-DD');
