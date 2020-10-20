@@ -62,11 +62,16 @@ lerna add gulp --scope=lerna-pkg-util --dev
 
 
 ## 常见问题
-1. 使用 npm 和 yarn 的区别
+1. 如何把 `node_modules` 安装到根目录
+```
+  "command": {
+    "bootstrap": {
+      "hoist": true
+    }
+  }
+```
 
-如果 `lerna.json` 中的 `"npmClient": "npm"`, 会在没个包下面安装对应 `node_modules` ，如果使用 `yarn` 则把所有的依赖安装到根目录下的 `node_modules`.
-
-
+在项目 `lerna.json` 增加如下配置
 
 ## 参考资料
 
