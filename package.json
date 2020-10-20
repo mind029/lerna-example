@@ -6,6 +6,6 @@
   },
   "scripts": {
     "bootstrap": "npx lerna bootstrap",
-    "publish": "npx lerna publish from-package --yes"
+    "push": "npx lerna publish from-package --yes"
   }
 }
