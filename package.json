@@ -6,6 +6,6 @@
   },
   "scripts": {
     "bootstrap": "npx lerna bootstrap",
-    "push": "npx lerna publish from-package --yes --canary --preid beta"
+    "push": "npx lerna publish from-package --yes"
   }
 }
