@@ -1,6 +1,6 @@
 # `lerna-pkg-core`
 
-> TODO: description
+> TODO: description1
 
 ## Usage
 
